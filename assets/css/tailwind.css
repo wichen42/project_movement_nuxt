@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply bg-black
+}
+
+@layer components {
+    .anchor {
+        font-family: 'Bebas Neue', cursive;
+        @apply text-white mr-10 w-full h-full text-lg
+    }
+}

@@ -1,18 +1,5 @@
 <template>
-    <!-- Header -->
-    <div>
-        <div class="flex flex-row">
-            <div class="mx-10 mr-20">
-                <img src="../assets/images/LogoGold.png" alt="logo">
-            </div>            
-            <div class="">
-                <a href="#home">Home</a>
-                <a href="#programs">Programs</a>
-                <a href="#testimonials">Testimonials</a>
-                <a href="contact">Contact Us</a>
-            </div>
-        </div>
-    </div>
+    <Header />
 
     <!-- Body -->
     <div>
@@ -24,3 +11,13 @@
         <p>footer</p>
     </div>
 </template>
+
+<script>
+    import Header from "../components/Header.vue"
+
+    export default {
+        components: {
+            Header
+        }
+    }
+</script>
