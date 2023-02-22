@@ -6,6 +6,10 @@ body {
     @apply bg-black mx-24
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @layer components {
     .anchor {
         font-family: 'Bebas Neue', cursive;
