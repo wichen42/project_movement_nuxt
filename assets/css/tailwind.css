@@ -9,6 +9,17 @@ body {
 @layer components {
     .anchor {
         font-family: 'Bebas Neue', cursive;
-        @apply text-white m-10 w-full h-full text-lg whitespace-nowrap
+        @apply text-white m-10 w-full h-full text-lg whitespace-nowrap text-xl
+    }
+
+    .HomePageGraphicsText {
+        font-family: 'Bebas Neue', cursive;
+        @apply text-white font-bold text-5xl
+    }
+
+    .HomePageText {
+        font-family: 'DM Sans', sans-serif;
+        @apply text-white
     }
 }
+
