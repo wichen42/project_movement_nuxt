@@ -22,8 +22,12 @@
 
 </template>
 
-<script setup>
-
+<script>
+export default {
+    setup() {
+        
+    }
+}
 </script>
 
 <style scoped>
