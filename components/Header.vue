@@ -5,10 +5,10 @@
                 <img class="mr-10" :src="logoStyle" alt="logo">
             </div>            
             <div class="h-full w-full flex justify-between items-center">
-                <a :class="anchorStyle" class="anchor" href="#homepage">Home</a>
-                <a :class="anchorStyle" class="anchor" href="#programs">Programs</a>
-                <a :class="anchorStyle" class="anchor" href="#testimonials">Testimonials</a>
-                <a :class="anchorStyle" class="anchor" href="#contact">Contact Us</a>
+                <button :class="anchorStyle" @click="handleHome" class="anchor">Home</button>
+                <button :class="anchorStyle" class="anchor">Programs</button>
+                <button :class="anchorStyle" class="anchor">Testimonials</button>
+                <button :class="anchorStyle" class="anchor">Contact Us</button>
             </div>
         </div>
 
@@ -31,6 +31,12 @@ export default {
     methods: {
         handleScroll() {
             this.scrolled = window.scrollY > 0
+        },
+        handleHome() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
         }
     },
     computed: {
