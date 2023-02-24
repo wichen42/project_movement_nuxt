@@ -1,6 +1,6 @@
 <template>
     <div class="flex flex-col w-full h-full">
-       <p class="text-3xl mb-12">MORE THAN JUST A GYM</p>
+       <p class="text-3xl mb-10" id="program">MORE THAN JUST A GYM</p>
         <div class="flex flex-row items-stretch">
             <div :class="divStyle" >
                 <i class="material-icons text-white text-4xl mb-2 border-2 rounded-full p-2">person</i>
