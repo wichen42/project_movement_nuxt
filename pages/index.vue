@@ -1,6 +1,7 @@
 <template>
     <HomePage />
     <Programs />
+    <Testimonials />
 </template>
 
 <script setup>

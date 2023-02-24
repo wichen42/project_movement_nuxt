@@ -2,7 +2,7 @@
     <div :class="headerStyle" class="flex bg-black flex-row justify-between min-w-full items-center mb-24 py-5 px-10 fixed left-0 top-0 z-30" id="homepage">
         <div class="flex flex-row items-center justify-center">
             <div class="h-full w-full">
-                <img class="mr-10" :src="logoStyle" alt="logo">
+                <img class="mr-10 pl-16" :src="logoStyle" alt="logo">
             </div>            
             <div class="h-full w-full flex justify-between items-center">
                 <button :class="anchorStyle" @click="handleHome" class="anchor">Home</button>
@@ -12,7 +12,7 @@
             </div>
         </div>
 
-        <div class="pl-30">
+        <div class="mr-32">
             <button class="text-black bg-[#D7BE69] py-3 px-10 rounded container">Become a Member</button>
         </div>
     </div>
