@@ -1,8 +1,13 @@
 <template>
-    <div class="flex flex-col">
-        <p id="header">TESTIMONIALS</p>
-        <div class="text-white" v-for="testimonial in testimonials">
-            <img :src="testimonial.image" alt="testimonial-image">
+    <p id="header">TESTIMONIALS</p>
+    <div class="carousel relative">
+        <div class="carousel-container flex">
+            <img v-for="(testimonial, index) in testimonials"
+                 :key="index"
+                 :src="testimonial.image"
+                 alt="testimonial-image"
+                 class="w-full h-[26rem] object-cover"
+            >
         </div>
     </div>
 </template>
@@ -72,7 +77,7 @@ export default {
 <style scoped>
     #header {
         font-family: 'Montserrat', sans-serif;
-        @apply text-white text-3xl
+        @apply text-white text-3xl mb-20
     }
 
     .testimonial {
