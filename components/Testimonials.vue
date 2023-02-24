@@ -1,13 +1,21 @@
 <template>
     <p id="header">TESTIMONIALS</p>
-    <div class="carousel relative">
-        <div class="carousel-container flex">
+    <div class="carousel h-[400px] relative">
+        <div class="overflow-x-scroll flex h-full snap-x snap-mandatory">
             <img v-for="(testimonial, index) in testimonials"
                  :key="index"
                  :src="testimonial.image"
                  alt="testimonial-image"
-                 class="w-full h-[26rem] object-cover"
+                 class="w-full h-full object-cover snap-center"
             >
+        </div>
+        <div class="carousel-nav absolute flex top-1/2 w-full justify-between">
+            <button class="text-white text-2xl p-2 rounded-[8px] flex items-center justify-center bg-gray-800 hover:bg-gray-900">
+                <i class="material-icons">arrow_back_ios</i>
+            </button>
+            <button class="text-white text-2xl p-2 rounded-[8px] flex items-center justify-center bg-gray-800 hover:bg-gray-900">
+                <i class="material-icons">arrow_forward_ios</i>
+            </button>
         </div>
     </div>
 </template>
@@ -83,4 +91,12 @@ export default {
     .testimonial {
         @apply text-white
     }
+
+    .carousel-container {
+        /* scroll-snap-type: x mandatory; */
+    }
+    .carousel-container::-webkit-scrollbar {
+        /* display: none; */
+    }
+
 </style>
