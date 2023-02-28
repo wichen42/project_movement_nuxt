@@ -1,15 +1,46 @@
 <template>
     <p id="header">TESTIMONIALS</p>
-    <div class="overflow-x-scroll flex h-full w-full snap-x snap-mandatory relative">
-        <Testimonial :testimonials="testimonials"/>
-    </div>
+    <swiper class="border-b-2 cursor-grab border-white w-full m-auto my-24"
+        :slides-per-view="3"
+        :modules="modules"
+        :space-between="20"
+        :loop="true"
+        :pagination="{clickable: true}"
+        :autoplay="{
+            delay: 7000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+        }"
+    >
+        <swiper-slide v-for="(testimonial, index) in testimonials" :key="index">
+            <div class="text-white relative">
+                <div>
+                <img
+                    class="h-full absolute" 
+                    :src="testimonial.image" 
+                    alt="testimonial-image"
+                >
+                </div>
+                <div class="absoulte text-white top-0 left-0">
+                    <p>{{ testimonial.name }}</p>
+                </div>
+            </div>
+
+        </swiper-slide>
+    </swiper>
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import { Autoplay, Pagination } from 'swiper'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { ref } from 'vue'
+
 export default {
-    data() {
-        return {
-            testimonials: [
+    components: { Swiper, SwiperSlide },
+    setup() {
+        const testimonials = ref([
             {
                 name: "Carl S.", 
                 description: "I'm a Veteran, with a nasty case of PTSD. I tore up my back muscles and shredded nerves, leaving me uncomfortable, to say the least. Eight sessions with Kevin has put me back on the road to actually being physically able. My bum shoulder has dramatically improved the range of motion, and significantly reduced pain. My back muscles are again working, and my sense of balance is significantly improved. He identified the exercises and machines most likely to help me heal, and so they have.",
@@ -60,10 +91,11 @@ export default {
                 description: "I can't say enough good things about Kevin! He's not only an excellent personal trainer but also a wonderful person. He's patient, kind, and always goes above and beyond to help his clients. He's helped me build strength and confidence, and I'm so grateful for his guidance and support.",
                 image: "_nuxt/assets/images/image10.jpg"
             }
+        ])
 
-        ]
-        }
+        return { modules: [Pagination, Autoplay], testimonials }
     }
+
 }
 </script>
 
