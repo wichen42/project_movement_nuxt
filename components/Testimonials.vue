@@ -13,19 +13,16 @@
         }"
     >
         <swiper-slide v-for="(testimonial, index) in testimonials" :key="index">
-            <div class="text-white relative h-full w-full">
-                <div>
+            <div class="text-white flex relative h-82 w-full">
                 <img
-                    class="h-full w-full" 
+                    class="object-cover h-full w-full" 
                     :src="testimonial.image" 
                     alt="testimonial-image"
                 >
                 </div>
-                <div class="absoulte text-white top-0 left-0">
+                <div class="absoulte text-white text-center w-full inset-x-0">
                     <p>{{ testimonial.name }}</p>
                 </div>
-            </div>
-
         </swiper-slide>
     </swiper>
 </template>
