@@ -13,16 +13,15 @@
         }"
     >
         <swiper-slide v-for="(testimonial, index) in testimonials" :key="index">
-            <div class="text-white flex relative h-82 w-full">
+            <div class="text-white flex items-center justify-center relative h-82">
                 <img
-                    class="object-cover h-full w-full" 
+                    class="object-cover h-full w-full opacity-40" 
                     :src="testimonial.image" 
                     alt="testimonial-image"
                 >
-                </div>
-                <div class="absoulte text-white text-center w-full inset-x-0">
-                    <p>{{ testimonial.name }}</p>
-                </div>
+                <h2 class="text-white absolute top-20">{{ testimonial.name }}</h2>
+                <p class="text-white absolute text-center">{{ testimonial.description }}</p>
+            </div>
         </swiper-slide>
     </swiper>
 </template>
@@ -49,43 +48,43 @@ export default {
                 image: "_nuxt/assets/images/image2.png"
             },
             {
-                name: "Sarah T.",
-                description: "Kevin is an amazing personal trainer! He helped me achieve my fitness goals by providing a tailored workout plan and personalized coaching. He pushed me to my limits and motivated me to stay on track. Thanks to Kevin, I am now in the best shape of my life!",
+                name: "Winnie L.",
+                description: "Very attentive coach. Kevin programed a challenging yet fun program for us and it was non-stop burning in a good way. Was always correcting form and gave great motivation throughout the workout. You feel very nurtured and cared for which is super great for people like me who needs the reassurance when it comes to doing new things/workouts.",
                 image: "_nuxt/assets/images/image3.png"
             },
             {
-                name: "John D.",
-                description: "Working with Kevin has been an incredible experience. His knowledge of fitness and nutrition is unparalleled, and he has helped me transform my body and mindset. He's patient, supportive, and always willing to go the extra mile to ensure I'm reaching my goals. I highly recommend Kevin to anyone looking for a personal trainer who truly cares about their success.",
+                name: "Jacky R.",
+                description: "Kevin’s class was amazing! Despite working out consistently on my own, he has managed to push me to my limits each time,whether a 1 on 1 training session or a conditioning class. Would do it again.",
                 image: "_nuxt/assets/images/image4.png"
             },
             {
-                name: "Emily R.",
-                description: "Kevin is hands down the best personal trainer I've ever worked with. His approach is both challenging and rewarding, and he never fails to keep me motivated and engaged during our sessions. He's also great at adapting workouts to my abilities and ensuring that I'm always making progress. I can't recommend him enough!",
+                name: "Donald N.",
+                description: "Instructor is very thorough. He is very articulate with explaining proper forms of exercises. Over super cool and genuine guy in general! Will be going back!",
                 image: "_nuxt/assets/images/image5.png"
             }, 
             {
-                name: "Alex S.",
-                description: "I've been training with Kevin for several months now, and I'm incredibly impressed with the results. His expertise and guidance have helped me reach new levels of fitness and strength, and I'm grateful for his encouragement and support throughout the journey. Kevin is a top-notch personal trainer, and I would recommend him to anyone looking to take their fitness to the next level.",
+                name: "Stephanie L.",
+                description: "I took a Wednesday night HIIT class with Kevin. Being relatively inexperienced and not having taken a HIIT class in a few years, I was greeted with a really kind demeanor and reassurance that I can modify any exercises as needed to meet my level. The class was intense, fun, and went by so quickly because of the fast pace. Kevin made sure to check in with the whole class to make sure we understood the workouts and did everything safely. I already have my next class booked and am looking forward to continuing my journey at this studio!",
                 image: "_nuxt/assets/images/image6.png"
             },
             {
-                name: "Samantha K.",
-                description: "Kevin is simply amazing! He's knowledgeable, patient, and always pushes me to achieve my best. He's helped me overcome obstacles and reach goals I never thought possible. I'm so grateful to have him as my personal trainer, and I can't imagine my fitness journey without him.",
+                name: "Wai W.",
+                description: "Kevin explained the workouts concisely and individualized his coaching style to everyone's fitness goals and levels. Throughout the class, Kevin continuously motivated us, which made it an overall fun and upbeat class. The studio is extremely clean and organized with a variety of cables, racks, dumbbells and kettlebells of varying weights as well as cardio equipment. I would highly recommend anyone of any fitness level to try out his various small group training options or to seek his expertise in advancing their fitness and nutritional goals.",
                 image: "_nuxt/assets/images/image7.jpg"
             },
             {
-                name: "David B.",
-                description: "I was hesitant to work with a personal trainer, but Kevin has been a game-changer. He's helped me set realistic goals and create a sustainable workout plan. He's always available for questions and feedback, and his positive attitude is infectious. Thanks to Kevin, I'm more confident and motivated than ever before!",
+                name: "Lulu W.",
+                description: "Kevin was a great instructor! He thoroughly explained all the warm-ups and the workouts. He encouraged us throughout the class and corrected our forms, when necessary. Not only was the class informative, but it was so much fun! All the equipment was well-cleaned and kept. It was a studio that felt intimate and not as intimidating. Did I mention how great the lighting was??! You can tell Kevin really cares about his clients the way he communicated with everyone there. All in all, Kevin exceeded my expectations with his workout class, and I'm already looking forward to attending his future classes.",
                 image: "_nuxt/assets/images/image8.jpg"
             },
             {
-                name: "Rachel M.",
-                description: "Kevin is the perfect combination of tough and supportive. He challenges me to push past my limits and never lets me settle for less than my best. He also takes the time to understand my goals and makes sure I'm on track to achieve them. I'm so grateful to have him as my personal trainer!",
+                name: "Cindy K.",
+                description: "I’ve been using Kevin as a coach for over a year and have seen so much progress on my strength and fitness goals. When he opened his studio, I jumped at the chance to take a group class which focused on strength. He listens, is able to provide various options for all leveling, and all while making the class challenging enough to push for results. He is an expert in all things fitness and nutrition and I cannot recommend him enough for those open to getting their fitness game to the next level.",
                 image: "_nuxt/assets/images/image9.jpg"
             },
             {
-                name: "Jason L.",
-                description: "I can't say enough good things about Kevin! He's not only an excellent personal trainer but also a wonderful person. He's patient, kind, and always goes above and beyond to help his clients. He's helped me build strength and confidence, and I'm so grateful for his guidance and support.",
+                name: "Valerie N.",
+                description: "Kevin’s studio just opened and I had the honor to experience one of his strength & conditioning workout class. As someone who enjoys taking a workout class every few weeks, Kevin’s class did not disappoint! I love to challenge myself and I love having fun while working out and his class delivered what I was hoping for.",
                 image: "_nuxt/assets/images/image10.jpg"
             }
         ])
