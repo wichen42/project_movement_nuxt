@@ -1,6 +1,6 @@
 <template>
     <p id="header">TESTIMONIALS</p>
-    <swiper class="border-b-2 cursor-grab border-white w-full m-auto my-24"
+    <swiper class="border-b-2 cursor-grab border-white h-full w-full m-auto my-24"
         :slides-per-view="3"
         :modules="modules"
         :space-between="20"
@@ -13,10 +13,10 @@
         }"
     >
         <swiper-slide v-for="(testimonial, index) in testimonials" :key="index">
-            <div class="text-white relative">
+            <div class="text-white relative h-full w-full">
                 <div>
                 <img
-                    class="h-full absolute" 
+                    class="h-full w-full" 
                     :src="testimonial.image" 
                     alt="testimonial-image"
                 >
