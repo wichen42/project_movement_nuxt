@@ -9,7 +9,7 @@
                 <p class="HomePageText">PRJCT MVMT is a boutique fitness studio focused on making you feel, look, and MOVE better! Join us now to make fitness part of your everyday lifestyle whether it's one on one training or our small group training, we’ll get you moving.</p>
             </div>
             <div class="flex flex-row items-center">
-                <div class="bg-[#D7BE69] p-2 px-8 rounded mr-10 cursor-pointer">Join Now</div>
+                <div class="bg-[#D4AF37] p-2 px-8 rounded mr-10 cursor-pointer">Join Now</div>
                 <div class="text-white underline cursor-pointer">Learn More</div>
             </div>
         </div>
