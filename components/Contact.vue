@@ -34,6 +34,6 @@
     }
 
     .form-input {
-        @apply mb-5 w-full rounded-lg bg-white px-5 py-3
+        @apply mb-5 w-full rounded-lg bg-white px-5 py-3 placeholder:text-black
     }
 </style>
