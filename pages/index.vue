@@ -2,6 +2,7 @@
     <HomePage />
     <Programs />
     <Testimonials />
+    <Contact />
 </template>
 
 <script setup>

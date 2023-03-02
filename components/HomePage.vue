@@ -2,7 +2,7 @@
     <div class="flex flex-row w-full h-full items-center mt-52 pb-40">
         <div class="flex flex-col h-full w-3/5 m-5"> 
             <div class="w-full h-full">
-                <p class="HomePageGraphicsText mb-5">YOUR ASSIGNMENT IS FITNESS - </p>
+                <p class="HomePageGraphicsText mb-5">YOUR ASSIGNMENT IS FITNESS &nbsp;- </p>
                 <p class="HomePageGraphicsText mb-10 ml-72" >JOIN THE MVMT</p>
             </div>
             <div class="w-full h-full mb-10">
