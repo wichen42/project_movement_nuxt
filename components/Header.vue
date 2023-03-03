@@ -6,9 +6,9 @@
             </div>            
             <div class="h-full w-full flex justify-between items-center">
                 <button :class="anchorStyle" @click="handleHome" class="anchor">Home</button>
-                <button :class="anchorStyle" class="anchor">Programs</button>
-                <button :class="anchorStyle" class="anchor">Testimonials</button>
-                <button :class="anchorStyle" class="anchor">Contact Us</button>
+                <button :class="anchorStyle" @click="handleProgram" class="anchor">Programs</button>
+                <button :class="anchorStyle" @click="handleTestimonial" class="anchor">Testimonials</button>
+                <button :class="anchorStyle" @click="handleContact"  class="anchor">Contact Us</button>
             </div>
         </div>
 
@@ -35,6 +35,24 @@ export default {
         handleHome() {
             window.scrollTo({
                 top: 0,
+                behavior: 'smooth'
+            })
+        },
+        handleProgram() {
+            window.scrollTo({
+                top: 800,
+                behavior: 'smooth'
+            })
+        },
+        handleTestimonial() {
+            window.scrollTo({
+                top: 2100,
+                behavior: 'smooth'
+            })
+        },
+        handleContact() {
+            window.scrollTo({
+                top: 2800,
                 behavior: 'smooth'
             })
         }

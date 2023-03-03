@@ -1,8 +1,8 @@
 <template>
     <HomePage />
-    <Programs />
-    <Testimonials />
-    <Contact />
+    <Programs id="program"/>
+    <Testimonials id="testimonial"/>
+    <Contact id="contact"/>
 </template>
 
 <script setup>
