@@ -36,7 +36,7 @@
                     <p class="mb-5 text-white">CPR/AED Certified</p>
                     <p class="text-white">Kevin loves his job as a personal trainer and coach. He believes that personal trainers and coaches are the frontline of helping individuals take their first steps in changing their lives. Kevin is extremely experienced with transformations, helping individuals stay consistent and accountable for their fitness goals. He is willing to take on any client who loves to be challenged and wants to be the best version of themselves.</p>
                 </div>
-                <button class="text-black bg-[#D4AF37] py-3 px-10 rounded container w-fit">Join Now</button>
+                <button class="text-black bg-[#D4AF37] py-3 px-10 rounded container w-fit" @click="handleClick">Join Now</button>
             </div>
         </div>
     </div>
@@ -48,6 +48,14 @@ export default {
         let divStyle = 'flex flex-col items-center justify-center p-10 mr-20 w-full h-full border-2 border-white rounded'
 
         return {divStyle}
+    },
+    methods: {
+        handleClick() {
+            window.scrollTo({
+                top: 2800,
+                behavior: 'smooth'
+            })
+        }
     }
 }
 </script>

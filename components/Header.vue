@@ -13,7 +13,7 @@
         </div>
 
         <div class="mr-32">
-            <button class="text-black bg-[#D4AF37] py-3 px-10 rounded container">Become a Member</button>
+            <button class="text-black bg-[#D4AF37] py-3 px-10 rounded container" @click="handleContact">Become a Member</button>
         </div>
     </div>
 </template>
