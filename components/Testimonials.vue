@@ -1,6 +1,6 @@
 <template>
     <p id="header">TESTIMONIALS</p>
-    <swiper class="border-b-2 cursor-grab border-white h-full w-full m-auto mb-40"
+    <swiper class="border-b-2 cursor-grab h-full w-full m-auto mb-40"
         :slides-per-view="3"
         :modules="modules"
         :space-between="20"
@@ -100,5 +100,6 @@ export default {
         font-family: 'Montserrat', sans-serif;
         @apply text-white text-3xl mb-20
     }
+
 
 </style>

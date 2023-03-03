@@ -3,10 +3,14 @@
         <div id="header" class="text-white text-3xl mb-10"><span class="text-[#D7BE69]">JOIN NOW</span> TO GET IN SHAPE</div>
         <p>We're here to help you achieve your fitness goals! If you have any questions or feedback, please don't hesitate to contact us using the form below.</p>
         <p class="mb-12">Thank you for considering Fitness Studio for your fitness journey. We look forward to hearing from you and helping you achieve your goals!</p>
-        <form action="#" class="w-4/6">
-            <input type="text" name="name" class="form-input" placeholder="NAME">
-            <input type="text" name="email" class="form-input" placeholder="EMAIL">
-            <input type="text" name="phone" class="form-input" placeholder="Phone Number">
+        <form 
+         action="https://formsubmit.co/projectmovementstudio@gmail.com"
+         method="POST"
+         class="w-4/6">
+            <input type="hidden" name="_subject" value="Project Movement Studio Website Contact Form">
+            <input type="text" name="name" class="form-input" placeholder="NAME" required>
+            <input type="text" name="email" class="form-input" placeholder="EMAIL" required>
+            <input type="text" name="phone" class="form-input" placeholder="Phone Number" required>
             <div>
                 <select name="programs" class="form-input">
                     <option value="">Which program are you interested in?</option>

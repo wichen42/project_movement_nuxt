@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-row w-full h-full items-center mt-52 pb-40">
+    <div class="flex flex-row w-full h-full items-center mt-52 pb-40 ">
         <div class="flex flex-col h-full w-3/5 m-5"> 
             <div class="w-full h-full">
                 <p class="HomePageGraphicsText mb-5">YOUR ASSIGNMENT IS FITNESS &nbsp;- </p>
