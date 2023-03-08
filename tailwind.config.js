@@ -10,9 +10,9 @@ module.exports = {
   ],
   theme: {
     screens: {
-      'xs': "480px",
-      'sm': "768px",
-      'md': "1060px",
+      'xs': {'min': '480px', 'max': '767px'},
+      'sm': {'min': '768px', 'max': '1059px'},
+      'md': {'min': '1060px'},
     }
   },
   plugins: [],

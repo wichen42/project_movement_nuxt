@@ -1,6 +1,5 @@
 <template>
-    <Header v-if="!mobileView"/>
-
+    <Header/>
     <!-- Body -->
     <div>
         <slot/>
@@ -15,12 +14,15 @@
     export default {
         data: () => {
             return {
-                mobileView: false,
-                showNav: false,
+                
             }
         },  
         components: {
             Header
+        },
+        methods: {
+        },
+        created() {
         }
     }
 </script>
