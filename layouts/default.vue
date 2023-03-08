@@ -1,5 +1,5 @@
 <template>
-    <Header />
+    <Header v-if="!mobileView"/>
 
     <!-- Body -->
     <div>
@@ -13,6 +13,12 @@
     import Header from "../components/Header.vue"
 
     export default {
+        data: () => {
+            return {
+                mobileView: false,
+                showNav: false,
+            }
+        },  
         components: {
             Header
         }

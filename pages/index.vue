@@ -5,8 +5,15 @@
     <Contact id="contact"/>
 </template>
 
-<script setup>
-    
+<script>
+export default {
+    data: () => {
+        return {
+            mobileView: false,
+            showNav: false,
+        };
+    }
+}
 </script>
 
 <style scoped>
