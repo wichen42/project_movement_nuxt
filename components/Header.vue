@@ -1,5 +1,5 @@
 <template>
-    <div :class="headerStyle" class="flex md:bg-black bg-white flex-row justify-between min-w-full items-center mb-24 py-5 px-10 fixed left-0 top-0 z-30" id="homepage">
+    <div :class="headerStyle" class="flex bg-black justify-between min-w-full items-center mb-24 py-5 px-10 fixed left-0 top-0 z-30" id="homepage">
         <div class="flex flex-row items-center justify-center">
             <div class="h-full w-full">
                 <img class="mr-10 pl-16" :src="logoStyle" alt="logo">
